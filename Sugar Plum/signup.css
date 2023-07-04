@@ -1,0 +1,56 @@
+* Font Awesome styles */
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+ 
+  *{
+    font-family: "Comic Sans MS", cursive;
+    margin: 0; padding: 0px;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  body {
+    font-family: "Comic Sans MS", cursive;
+    background-color: lavenderblush;
+  }
+  /* HEADER */
+  header {
+    background-color: lavenderblush;
+    padding: 10px 20px;
+    display: flex;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .logo {
+    flex: 0.5;
+    margin-right: 500px; /* Increase the right margin for more space */
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+  }  
+  .menu li {
+    display: inline-block;
+    font-size: 25px;
+    margin: 0 10px;
+  }
+  .menu li a{
+    color: black
+  }
+  .icons {
+    text-align: right;
+    margin-left: 400px; /* Increase the left margin for more space */
+  }
+  
+  .icons i {
+    margin-left: 10px;
+  }
+  
+  .icons a {
+    color: black;
+    text-decoration: none;
+  } 
