@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .menu-section {
+    margin-top: 30px;
+  }
+  
+  h2 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .menu-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .food-name {
+    margin: 0;
+  }
+  
+  .item-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-quantity {
+    margin-right: 10px;
+  }
+  
+  .item-price {
+    flex-grow: 1;
+    text-align: right;
+    margin-right: 10px;
+  }
+  
+  .add-to-cart,
+  .order-now {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart {
+    margin-right: 5px;
+  }
+  
