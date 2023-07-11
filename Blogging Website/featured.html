@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Inner Monologue</title>
+    <link rel="stylesheet" href="featured.css" />
+    <script>
+      function toggleFullArticle() {
+        var fullArticle = document.getElementById("full-article");
+        var showFullArticleBtn = document.getElementById(
+          "show-full-article-btn"
+        );
+        var additionalImage = document.getElementById("additional-image");
+
+        if (fullArticle.style.display === "none") {
+          fullArticle.style.display = "block";
+          showFullArticleBtn.innerHTML = "Hide";
+
+          // Create and append additional image
+          var img = document.createElement("img");
+          img.src = "path/to/your/additional-image.jpg";
+          img.alt = "Additional Image";
+          img.classList.add("image");
+          additionalImage.appendChild(img);
+        } else {
+          fullArticle.style.display = "none";
+          showFullArticleBtn.innerHTML = "Continue Reading";
+
+          // Remove additional image
+          additionalImage.innerHTML = "";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="header-nav">
+        <div class="logo">
+          <a href="#">The Inner Monologue</a>
+        </div>
+        <ul class="menu">
+          <li><a href="home.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle"
+              >Blog <i class="fas fa-caret-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="featured.html">Featured Post</a></li>
+              <br />
+              <li><a href="random.html">Random Topic</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li></li>
+        </ul>
+
+        <div class="create-account">
+          <a href="account.html"><i class="fas fa-user"></i></a>
+        </div>
+      </nav>
+    </header>
+    <!-- Body -->
+    <h3 class="main-heading">Featured Post</h3>
+    <div class="box">
+      <div class="image">
+        <img src="images/h-img1.jpg" alt="Article Image" />
+      </div>
+      <div class="content">
+        <div class="topic">Topic of the Article</div>
+        <div class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illo
+          minima quibusdam fugit culpa vero consectetur maxime officiis? Quo
+          earum cum debitis natus a consequuntur est, sapiente vel sed
+          accusantium.
+        </div>
+        <div id="full-article" class="full-article">
+          <p>
+            Full article content goes here... Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Modi voluptates laudantium rerum
+            similique, doloremque dignissimos laboriosam voluptatibus molestias
+            tempora ab deleniti incidunt repellendus enim recusandae fugit quas?
+            Voluptate, saepe quibusdam?Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Voluptatibus expedita quo provident vero
+            consequuntur tempore architecto a aliquid nihil, maiores consectetur
+            praesentium, molestiae quia? Molestiae nesciunt quod in dolorum
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Reprehenderit, illo quaerat sapiente fuga nobis id qui consequatur
+            neque incidunt. Error dolorum explicabo aliquid eligendi corrupti,
+            provident ut est. Nemo, Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptates hic sit quod vitae quis voluptatibus
+            iusto explicabo. Similique minus quia maiores error delectus
+            possimus, molestias, cupiditate modi eveniet quibusdam dicta!
+          </p>
+        </div>
+        <div
+          id="show-full-article-btn"
+          class="show-full-article"
+          onclick="toggleFullArticle()"
+        >
+          Continue Reading
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <img src="images/h-img1.jpg" alt="Article Image" />
+      </div>
+      <div class="content">
+        <div class="topic">Topic of the Article</div>
+        <div class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illo
+          minima quibusdam fugit culpa vero consectetur maxime officiis? Quo
+          earum cum debitis natus a consequuntur est, sapiente vel sed
+          accusantium.
+        </div>
+        <div id="full-article" class="full-article">
+          <p>
+            Full article content goes here... Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Modi voluptates laudantium rerum
+            similique, doloremque dignissimos laboriosam voluptatibus molestias
+            tempora ab deleniti incidunt repellendus enim recusandae fugit quas?
+            Voluptate, saepe quibusdam?Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Voluptatibus expedita quo provident vero
+            consequuntur tempore architecto a aliquid nihil, maiores consectetur
+            praesentium, molestiae quia? Molestiae nesciunt quod in dolorum
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Reprehenderit, illo quaerat sapiente fuga nobis id qui consequatur
+            neque incidunt. Error dolorum explicabo aliquid eligendi corrupti,
+            provident ut est. Nemo, Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptates hic sit quod vitae quis voluptatibus
+            iusto explicabo. Similique minus quia maiores error delectus
+            possimus, molestias, cupiditate modi eveniet quibusdam dicta!
+          </p>
+        </div>
+        <div
+          id="show-full-article-btn"
+          class="show-full-article"
+          onclick="toggleFullArticle()"
+        >
+          Continue Reading
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <img src="images/h-img1.jpg" alt="Article Image" />
+      </div>
+      <div class="content">
+        <div class="topic">Topic of the Article</div>
+        <div class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illo
+          minima quibusdam fugit culpa vero consectetur maxime officiis? Quo
+          earum cum debitis natus a consequuntur est, sapiente vel sed
+          accusantium.
+        </div>
+        <div id="full-article" class="full-article">
+          <p>
+            Full article content goes here... Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Modi voluptates laudantium rerum
+            similique, doloremque dignissimos laboriosam voluptatibus molestias
+            tempora ab deleniti incidunt repellendus enim recusandae fugit quas?
+            Voluptate, saepe quibusdam?Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Voluptatibus expedita quo provident vero
+            consequuntur tempore architecto a aliquid nihil, maiores consectetur
+            praesentium, molestiae quia? Molestiae nesciunt quod in dolorum
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Reprehenderit, illo quaerat sapiente fuga nobis id qui consequatur
+            neque incidunt. Error dolorum explicabo aliquid eligendi corrupti,
+            provident ut est. Nemo, Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptates hic sit quod vitae quis voluptatibus
+            iusto explicabo. Similique minus quia maiores error delectus
+            possimus, molestias, cupiditate modi eveniet quibusdam dicta!
+          </p>
+        </div>
+        <div
+          id="show-full-article-btn"
+          class="show-full-article"
+          onclick="toggleFullArticle()"
+        >
+          Continue Reading
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <img src="images/h-img1.jpg" alt="Article Image" />
+      </div>
+      <div class="content">
+        <div class="topic">Topic of the Article</div>
+        <div class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illo
+          minima quibusdam fugit culpa vero consectetur maxime officiis? Quo
+          earum cum debitis natus a consequuntur est, sapiente vel sed
+          accusantium.
+        </div>
+        <div id="full-article" class="full-article">
+          <p>
+            Full article content goes here... Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Modi voluptates laudantium rerum
+            similique, doloremque dignissimos laboriosam voluptatibus molestias
+            tempora ab deleniti incidunt repellendus enim recusandae fugit quas?
+            Voluptate, saepe quibusdam?Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Voluptatibus expedita quo provident vero
+            consequuntur tempore architecto a aliquid nihil, maiores consectetur
+            praesentium, molestiae quia? Molestiae nesciunt quod in dolorum
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Reprehenderit, illo quaerat sapiente fuga nobis id qui consequatur
+            neque incidunt. Error dolorum explicabo aliquid eligendi corrupti,
+            provident ut est. Nemo, Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptates hic sit quod vitae quis voluptatibus
+            iusto explicabo. Similique minus quia maiores error delectus
+            possimus, molestias, cupiditate modi eveniet quibusdam dicta!
+          </p>
+        </div>
+        <div
+          id="show-full-article-btn"
+          class="show-full-article"
+          onclick="toggleFullArticle()"
+        >
+          Continue Reading
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <img src="images/h-img1.jpg" alt="Article Image" />
+      </div>
+      <div class="content">
+        <div class="topic">Topic of the Article</div>
+        <div class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illo
+          minima quibusdam fugit culpa vero consectetur maxime officiis? Quo
+          earum cum debitis natus a consequuntur est, sapiente vel sed
+          accusantium.
+        </div>
+        <div id="full-article" class="full-article">
+          <p>
+            Full article content goes here... Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Modi voluptates laudantium rerum
+            similique, doloremque dignissimos laboriosam voluptatibus molestias
+            tempora ab deleniti incidunt repellendus enim recusandae fugit quas?
+            Voluptate, saepe quibusdam?Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Voluptatibus expedita quo provident vero
+            consequuntur tempore architecto a aliquid nihil, maiores consectetur
+            praesentium, molestiae quia? Molestiae nesciunt quod in dolorum
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Reprehenderit, illo quaerat sapiente fuga nobis id qui consequatur
+            neque incidunt. Error dolorum explicabo aliquid eligendi corrupti,
+            provident ut est. Nemo, Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptates hic sit quod vitae quis voluptatibus
+            iusto explicabo. Similique minus quia maiores error delectus
+            possimus, molestias, cupiditate modi eveniet quibusdam dicta!
+          </p>
+        </div>
+        <div
+          id="show-full-article-btn"
+          class="show-full-article"
+          onclick="toggleFullArticle()"
+        >
+          Continue Reading
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <img src="images/h-img1.jpg" alt="Article Image" />
+      </div>
+      <div class="content">
+        <div class="topic">Topic of the Article</div>
+        <div class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illo
+          minima quibusdam fugit culpa vero consectetur maxime officiis? Quo
+          earum cum debitis natus a consequuntur est, sapiente vel sed
+          accusantium.
+        </div>
+        <div id="full-article" class="full-article">
+          <p>
+            Full article content goes here... Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Modi voluptates laudantium rerum
+            similique, doloremque dignissimos laboriosam voluptatibus molestias
+            tempora ab deleniti incidunt repellendus enim recusandae fugit quas?
+            Voluptate, saepe quibusdam?Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Voluptatibus expedita quo provident vero
+            consequuntur tempore architecto a aliquid nihil, maiores consectetur
+            praesentium, molestiae quia? Molestiae nesciunt quod in dolorum
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Reprehenderit, illo quaerat sapiente fuga nobis id qui consequatur
+            neque incidunt. Error dolorum explicabo aliquid eligendi corrupti,
+            provident ut est. Nemo, Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptates hic sit quod vitae quis voluptatibus
+            iusto explicabo. Similique minus quia maiores error delectus
+            possimus, molestias, cupiditate modi eveniet quibusdam dicta!
+          </p>
+        </div>
+        <div
+          id="show-full-article-btn"
+          class="show-full-article"
+          onclick="toggleFullArticle()"
+        >
+          Continue Reading
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <img src="images/h-img1.jpg" alt="Article Image" />
+      </div>
+      <div class="content">
+        <div class="topic">Topic of the Article</div>
+        <div class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illo
+          minima quibusdam fugit culpa vero consectetur maxime officiis? Quo
+          earum cum debitis natus a consequuntur est, sapiente vel sed
+          accusantium.
+        </div>
+        <div id="full-article" class="full-article">
+          <p>
+            Full article content goes here... Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Modi voluptates laudantium rerum
+            similique, doloremque dignissimos laboriosam voluptatibus molestias
+            tempora ab deleniti incidunt repellendus enim recusandae fugit quas?
+            Voluptate, saepe quibusdam?Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Voluptatibus expedita quo provident vero
+            consequuntur tempore architecto a aliquid nihil, maiores consectetur
+            praesentium, molestiae quia? Molestiae nesciunt quod in dolorum
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Reprehenderit, illo quaerat sapiente fuga nobis id qui consequatur
+            neque incidunt. Error dolorum explicabo aliquid eligendi corrupti,
+            provident ut est. Nemo, Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptates hic sit quod vitae quis voluptatibus
+            iusto explicabo. Similique minus quia maiores error delectus
+            possimus, molestias, cupiditate modi eveniet quibusdam dicta!
+          </p>
+        </div>
+        <div
+          id="show-full-article-btn"
+          class="show-full-article"
+          onclick="toggleFullArticle()"
+        >
+          Continue Reading
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box">
+        <div class="image">
+          <img src="images/h-img1.jpg" alt="Article Image" />
+        </div>
+        <div class="content">
+          <div class="topic">Topic of the Article</div>
+          <div class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            illo minima quibusdam fugit culpa vero consectetur maxime officiis?
+            Quo earum cum debitis natus a consequuntur est, sapiente vel sed
+            accusantium.
+          </div>
+          <div id="full-article" class="full-article">
+            <p>
+              Full article content goes here... Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Modi voluptates laudantium rerum
+              similique, doloremque dignissimos laboriosam voluptatibus
+              molestias tempora ab deleniti incidunt repellendus enim recusandae
+              fugit quas? Voluptate, saepe quibusdam?Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Voluptatibus expedita quo provident
+              vero consequuntur tempore architecto a aliquid nihil, maiores
+              consectetur praesentium, molestiae quia? Molestiae nesciunt quod
+              in dolorum Lorem ipsum dolor sit, amet consectetur adipisicing
+              elit. Reprehenderit, illo quaerat sapiente fuga nobis id qui
+              consequatur neque incidunt. Error dolorum explicabo aliquid
+              eligendi corrupti, provident ut est. Nemo, Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Voluptates hic sit quod vitae
+              quis voluptatibus iusto explicabo. Similique minus quia maiores
+              error delectus possimus, molestias, cupiditate modi eveniet
+              quibusdam dicta!
+            </p>
+          </div>
+          <div
+            id="show-full-article-btn"
+            class="show-full-article"
+            onclick="toggleFullArticle()"
+          >
+            Continue Reading
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-section">
+        <h3>Links to Pages</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Our Policy</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> 123 Bakery Street, City</li>
+          <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+          <li><i class="fas fa-envelope"></i> info@bakeryshop.com</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Socials</h3>
+        <ul class="social-icons">
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
